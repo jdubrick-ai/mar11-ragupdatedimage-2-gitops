@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    app.kubernetes.io/instance: mar11-ragupdatedimage-2
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: mar11-ragupdatedimage-2
+  name: mar11-ragupdatedimage-2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi
